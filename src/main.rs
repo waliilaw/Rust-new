@@ -3,16 +3,15 @@ enum Result<A , B>{
     Err(B)
 }
 
-fn main {
-    let res = fs::read(path :"example.txt");
+fn main(){
+    let a1 = String::from("new");
 
-    match res {
-        Ok(content : String ) => {
-            println!("File contenmt : {}" , content);
-        }
-        Err(err : Error ) => {
-            println!("Error found {}" , err);
-        }
-    }
+    new_printer{a2 : &a1};
 
+    println!("{}" , a1);
+    println!("{}" , a2);
+}
+
+fn new_printer(a2 : &String){
+    println!("{}" , a2);
 }
