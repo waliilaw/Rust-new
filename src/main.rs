@@ -57,18 +57,27 @@
 //     }
 // }
 
-use std::collections::HashMap;
+// use std::collections::HashMap;
+
+// fn main() {
+//     let mut users = HashMap::new();
+
+//     users.insert(String::from("Wali"), 20);
+//     users.insert(String::from("Abdul"), 1);
+
+//     let users_new = users.get("Walis");
+
+//     match users_new {
+//         Some(age) => println!("User's age is {}", age),
+//         None => println!("No users found"),
+//     }
+// }
 
 fn main() {
-    let mut users = HashMap::new();
-
-    users.insert(String::from("Wali"), 20);
-    users.insert(String::from("Abdul"), 1);
-
-    let users_new = users.get("Walis");
-
-    match users_new {
-        Some(age) => println!("User's age is {}", age),
-        None => println!("No users found"),
+    let mut vec : Vec<i32>= vec![1 , 2 , 3];
+    for i in 10..13 {
+        vec.push(i);
     }
+
+    println!("{:?}" , vec);
 }
